@@ -11,7 +11,7 @@ Ephemeral Onion Addresses : The server generates new onion addresses periodicall
 
 File Management : Users can list, upload, download, delete, and view files on the server.  
 
-Encryption : AES-256 GCM encryption ensures secure communication between the client and server.  
+Encryption : AES-256 GCM encryption ensures secure communication between the server and subscibers.    
 
 Email Notifications : Subscribers receive encrypted emails with the new onion address and validity details.  
 
