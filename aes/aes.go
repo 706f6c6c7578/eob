@@ -12,7 +12,6 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
-	"runtime"
 	"strings"
 )
 
@@ -69,22 +68,15 @@ func main() {
 			fmt.Fprintf(os.Stderr, "Decryption failed: %v\n", err)
 			os.Exit(1)
 		}
-		fmt.Print(plaintext + getLineEnding())
+		fmt.Print(plaintext)
 	} else {
 		ciphertext, err := encryptMessage(string(input), key)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Encryption failed: %v\n", err)
 			os.Exit(1)
 		}
-		fmt.Print(ciphertext + getLineEnding())
+		fmt.Print(ciphertext)
 	}
-}
-
-func getLineEnding() string {
-	if runtime.GOOS == "windows" {
-		return "\r\n"
-	}
-	return "\n"
 }
 
 func loadKey(keyFile string) ([]byte, error) {
