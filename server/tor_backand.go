@@ -91,7 +91,7 @@ func sendNotification(onionID, port, hexKey string, validUntil time.Time, durati
     }
 
     // Create the plaintext message
-    plaintext := fmt.Sprintf("Onion Address: http://%s.onion\nPort: %s\nValid Until: %s UTC\nDuration: %v",
+    plaintext := fmt.Sprintf("Onion Address: http://%s.onion\nPort: %s\nValid Until: %s UTC\nDuration: %v\n",
         onionID, port, validUntil.Format("2006-01-02 15:04:05"), duration)
     encryptedMessage, err := encryptMessage(plaintext, key)
     if err != nil {
