@@ -14,3 +14,5 @@ File Management : Users can list, upload, download, delete, and view files on th
 Email Notifications : Subscribers receive encrypted emails with the new onion address and validity details.  
 
 Tor Integration : Built-in support for the Tor network ensures anonymity for both server and client.
+
+The repository contains an aes folder, which includes a small utililty do decrypt the automatic messages send by the server.
