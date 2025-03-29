@@ -15,4 +15,4 @@ Email Notifications : Subscribers receive encrypted emails with the new onion ad
 
 Tor Integration : Built-in support for the Tor network ensures anonymity for both server and client.
 
-The repository contains an aes folder, which includes a small utililty do decrypt the automatic messages sent by the server.
+The repository contains an aes folder, which includes a small utililty to decrypt the automatic messages sent by the server.
